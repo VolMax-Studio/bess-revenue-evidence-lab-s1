@@ -1,0 +1,37 @@
+{
+  "receipt_id": "RCPT-T1-CLAIM-EVID-002-DE-SPREAD",
+  "tier": 1,
+  "claim_id": "CLAIM-EVID-002-DE-SPREAD",
+  "verdict": "VERIFIED",
+  "summary": "For Germany (2026-08), the highest published benchmark is 303 kEUR/MW/yr (suena) and lowest is 187 kEUR/MW/yr (Regelleistung). The spread is 116 kEUR/MW/yr. Claim '116 kEUR/MW/yr' is VERIFIED.",
+  "calculation": {
+    "market_code": "DE",
+    "market_name": "Germany",
+    "target_period": "2026-08",
+    "reporting_providers_count": 9,
+    "min_benchmark": {
+      "provider_id": "regelleistung",
+      "provider_name": "Regelleistung Online \u2014 Benchmark",
+      "provider_short": "Regelleistung",
+      "value_keur_exact": 187.232,
+      "value_keur_integer": 187
+    },
+    "max_benchmark": {
+      "provider_id": "suena",
+      "provider_name": "suena \u2014 Optimiser Benchmark",
+      "provider_short": "suena",
+      "value_keur_exact": 303.6,
+      "value_keur_integer": 303
+    },
+    "calculated_spread_integer": 116,
+    "calculated_spread_exact": 116.368,
+    "claimed_spread_integer": 116,
+    "integer_arithmetic_formula": "303 - 187 = 116",
+    "exact_arithmetic_formula": "303.600 - 187.232 = 116.368",
+    "raw_dataset_hash": "752a0489d8e84d6ca815dfd0c31b79a88bf86c7ff058d745a108246101f061af"
+  },
+  "integrity": {
+    "manifest_status": "PASS",
+    "receipt_hash_sha256": "63d0ef6697af08005c51191d316d8efac6c44e71e2c6b978c7d3e1af8a7f28f9"
+  }
+}

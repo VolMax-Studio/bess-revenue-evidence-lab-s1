@@ -1,0 +1,24 @@
+{
+  "claim_id": "CLAIM-EVID-002-BE-SPREAD",
+  "tier": 1,
+  "category": "ARITHMETIC_SPREAD_VERIFICATION",
+  "title": "August 2026 Belgian BESS Revenue Benchmark Spread",
+  "published_statement": "In Belgium, highest benchmark is 229 kEUR/MW/year and lowest is 145 kEUR/MW/year, resulting in a monthly spread of 84 kEUR/MW/year.",
+  "source_publisher": "Mark Böhmer / Boehmer Advisory UG (www.bess-index.com)",
+  "market_code": "BE",
+  "market_name": "Belgium",
+  "target_period": "2026-08",
+  "claimed_values": {
+    "max_provider_short": "Re-Twin",
+    "max_benchmark_keur": 229,
+    "min_provider_short": "Aurora",
+    "min_benchmark_keur": 145,
+    "spread_keur": 84
+  },
+  "predicate": {
+    "operator": "EQUALS",
+    "target": "claimed_spread_keur",
+    "value": 84
+  },
+  "pinned_data_target": "data/raw/bess_benchmarks_august_2026.json"
+}

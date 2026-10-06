@@ -1,0 +1,37 @@
+{
+  "receipt_id": "RCPT-T1-CLAIM-EVID-002-ES-SPREAD",
+  "tier": 1,
+  "claim_id": "CLAIM-EVID-002-ES-SPREAD",
+  "verdict": "VERIFIED",
+  "summary": "For Spain (2026-08), the highest published benchmark is 507 kEUR/MW/yr (Clean Horizon) and lowest is 287 kEUR/MW/yr (Modo). The spread is 220 kEUR/MW/yr. Claim '220 kEUR/MW/yr' is VERIFIED.",
+  "calculation": {
+    "market_code": "ES",
+    "market_name": "Spain",
+    "target_period": "2026-08",
+    "reporting_providers_count": 4,
+    "min_benchmark": {
+      "provider_id": "modo",
+      "provider_name": "Modo Energy \u2014 Benchmark (2h)",
+      "provider_short": "Modo",
+      "value_keur_exact": 287.887,
+      "value_keur_integer": 287
+    },
+    "max_benchmark": {
+      "provider_id": "cleanhorizon",
+      "provider_name": "Clean Horizon \u2014 Storage Index",
+      "provider_short": "Clean Horizon",
+      "value_keur_exact": 507.0,
+      "value_keur_integer": 507
+    },
+    "calculated_spread_integer": 220,
+    "calculated_spread_exact": 219.113,
+    "claimed_spread_integer": 220,
+    "integer_arithmetic_formula": "507 - 287 = 220",
+    "exact_arithmetic_formula": "507.000 - 287.887 = 219.113",
+    "raw_dataset_hash": "752a0489d8e84d6ca815dfd0c31b79a88bf86c7ff058d745a108246101f061af"
+  },
+  "integrity": {
+    "manifest_status": "PASS",
+    "receipt_hash_sha256": "e920a5fa54a224e30007ef62527148d4b24f3385a716ba6686bea107bea2a8a7"
+  }
+}

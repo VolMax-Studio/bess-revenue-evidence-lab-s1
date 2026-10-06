@@ -1,0 +1,24 @@
+{
+  "claim_id": "CLAIM-EVID-002-ES-SPREAD",
+  "tier": 1,
+  "category": "ARITHMETIC_SPREAD_VERIFICATION",
+  "title": "August 2026 Spanish BESS Revenue Benchmark Spread",
+  "published_statement": "In Spain, highest benchmark is 507 kEUR/MW/year and lowest is 287 kEUR/MW/year, resulting in a monthly spread of 220 kEUR/MW/year.",
+  "source_publisher": "Mark Böhmer / Boehmer Advisory UG (www.bess-index.com)",
+  "market_code": "ES",
+  "market_name": "Spain",
+  "target_period": "2026-08",
+  "claimed_values": {
+    "max_provider_short": "Clean Horizon",
+    "max_benchmark_keur": 507,
+    "min_provider_short": "Modo",
+    "min_benchmark_keur": 287,
+    "spread_keur": 220
+  },
+  "predicate": {
+    "operator": "EQUALS",
+    "target": "claimed_spread_keur",
+    "value": 220
+  },
+  "pinned_data_target": "data/raw/bess_benchmarks_august_2026.json"
+}

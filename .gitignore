@@ -1,0 +1,14 @@
+# Never publish source-custody material
+data/raw/source_snapshot/
+**/source_snapshot/
+*.raw.html
+*.raw.js
+bess_monthly_series_complete.json
+
+# Local/runtime
+__pycache__/
+*.py[cod]
+.venv/
+.env
+.vercel/
+dist_package/

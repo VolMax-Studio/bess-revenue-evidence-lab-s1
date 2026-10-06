@@ -1,0 +1,34 @@
+{
+  "claim_id": "CLAIM-EVID-002-DE-COMPARABILITY",
+  "tier": 2,
+  "category": "METHODOLOGY_COMPARABILITY_ADJUDICATION",
+  "title": "German BESS Benchmark Comparability Adjudication (suena vs Regelleistung Online)",
+  "question": "Do the highest (303 kEUR/MW/yr) and lowest (187 kEUR/MW/yr) German BESS revenue benchmarks measure equivalent economic assets under identical operational constraints?",
+  "market_code": "DE",
+  "target_period": "2026-08",
+  "providers_compared": [
+    {
+      "provider_id": "suena",
+      "short": "suena",
+      "benchmark_keur": 303.6,
+      "role": "highest_benchmark"
+    },
+    {
+      "provider_id": "regelleistung",
+      "short": "Regelleistung",
+      "benchmark_keur": 187.232,
+      "role": "lowest_benchmark"
+    }
+  ],
+  "evaluated_dimensions": [
+    "foresight",
+    "cycling",
+    "cycle_limit",
+    "availability",
+    "revenue_streams",
+    "degradation",
+    "basis"
+  ],
+  "expected_verdict": "METHODOLOGY_MISMATCH",
+  "adjudication_rationale": "The published declarations contain at least one explicit methodology mismatch: degradation treatment is 'Managed' for suena and 'Not applied' for Regelleistung Online. Other fields contain differing wording or undisclosed values. Therefore direct comparability of the two benchmark values is not established; no causal decomposition of the 116 kEUR/MW/yr spread is claimed."
+}

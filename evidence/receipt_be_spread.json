@@ -1,0 +1,37 @@
+{
+  "receipt_id": "RCPT-T1-CLAIM-EVID-002-BE-SPREAD",
+  "tier": 1,
+  "claim_id": "CLAIM-EVID-002-BE-SPREAD",
+  "verdict": "VERIFIED",
+  "summary": "For Belgium (2026-08), the highest published benchmark is 229 kEUR/MW/yr (Re-Twin) and lowest is 145 kEUR/MW/yr (Aurora). The spread is 84 kEUR/MW/yr. Claim '84 kEUR/MW/yr' is VERIFIED.",
+  "calculation": {
+    "market_code": "BE",
+    "market_name": "Belgium",
+    "target_period": "2026-08",
+    "reporting_providers_count": 3,
+    "min_benchmark": {
+      "provider_id": "aurora",
+      "provider_name": "Aurora Energy Research \u2014 Central",
+      "provider_short": "Aurora",
+      "value_keur_exact": 145.32,
+      "value_keur_integer": 145
+    },
+    "max_benchmark": {
+      "provider_id": "retwin",
+      "provider_name": "Re-Twin \u2014 Digital Twin Benchmark",
+      "provider_short": "Re-Twin",
+      "value_keur_exact": 229.91,
+      "value_keur_integer": 229
+    },
+    "calculated_spread_integer": 84,
+    "calculated_spread_exact": 84.59,
+    "claimed_spread_integer": 84,
+    "integer_arithmetic_formula": "229 - 145 = 84",
+    "exact_arithmetic_formula": "229.910 - 145.320 = 84.590",
+    "raw_dataset_hash": "752a0489d8e84d6ca815dfd0c31b79a88bf86c7ff058d745a108246101f061af"
+  },
+  "integrity": {
+    "manifest_status": "PASS",
+    "receipt_hash_sha256": "ee60806fcd0bebcf875e521b4b4952be3b5b969ad4eeadb6bd6da2b4cf5d12e2"
+  }
+}

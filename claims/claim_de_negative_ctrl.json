@@ -1,0 +1,24 @@
+{
+  "claim_id": "CLAIM-EVID-002-DE-CTRL-NEG",
+  "tier": 1,
+  "category": "NEGATIVE_CONTROL_TEST",
+  "title": "Negative Control: German Spread Claim of 50 kEUR/MW/year",
+  "published_statement": "Hypothetical counter-claim asserting German BESS benchmark spread is 50 kEUR/MW/year (expected to FAIL deterministic check).",
+  "source_publisher": "Evidence Lab Synthetic Control",
+  "market_code": "DE",
+  "market_name": "Germany",
+  "target_period": "2026-08",
+  "claimed_values": {
+    "max_provider_short": "suena",
+    "max_benchmark_keur": 303,
+    "min_provider_short": "Regelleistung",
+    "min_benchmark_keur": 187,
+    "spread_keur": 50
+  },
+  "predicate": {
+    "operator": "EQUALS",
+    "target": "claimed_spread_keur",
+    "value": 50
+  },
+  "pinned_data_target": "data/raw/bess_benchmarks_august_2026.json"
+}

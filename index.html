@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Evidence Lab #002 — European BESS Revenue Benchmarks</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="header-inner">
+      <div class="brand">
+        <span class="brand-badge">VOLMAX EVIDENCE LAB #002</span>
+        <span class="brand-title">European BESS Revenue Benchmarks</span>
+      </div>
+      <div class="header-status">
+        <span class="status-dot"></span>
+        <span>SHA-256 PINNED & VERIFIED</span>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-tag">Empirical Audit & Comparability Adjudication</div>
+      <h1>European BESS Revenue Benchmarks</h1>
+      <p>
+        Evaluating published August 2026 battery revenue spreads across Germany, Belgium, and Spain. 
+        First, we verify the headline arithmetic against the pinned web dataset. Then, we adjudicate whether underlying provider methodologies are comparable.
+      </p>
+    </section>
+
+    <!-- Market Selector Tabs -->
+    <nav class="market-nav">
+      <button class="tab-btn active" data-key="DE">🇩🇪 Germany (Spread: 116 kEUR)</button>
+      <button class="tab-btn" data-key="BE">🇧🇪 Belgium (Spread: 84 kEUR)</button>
+      <button class="tab-btn" data-key="ES">🇪🇸 Spain (Spread: 220 kEUR)</button>
+      <button class="tab-btn negative-ctrl" data-key="CTRL_NEG">⚠️ Negative Control (Spread: 50 kEUR)</button>
+    </nav>
+
+    <!-- LEVEL 1: The Indisputable Check -->
+    <section id="tier1-card" class="card-tier1">
+      <div class="level-header">
+        <div>
+          <span class="level-badge">TIER 1 • ARITHMETIC VERIFICATION</span>
+          <h2 id="t1-title" class="level-title">Germany — August 2026</h2>
+          <div style="font-size: 0.8rem; color: var(--text-muted); font-family: var(--font-mono); margin-top: 0.2rem;" id="t1-claim-id">
+            CLAIM-EVID-002-DE-SPREAD
+          </div>
+        </div>
+        <div id="t1-verdict-badge" class="verdict-badge verified">
+          ✓ VERIFIED
+        </div>
+      </div>
+
+      <p id="t1-statement" style="color: var(--text-secondary); font-size: 0.95rem; margin-bottom: 1rem;">
+        Highest benchmark is 303 kEUR/MW/year (suena) and lowest is 187 kEUR/MW/year (Regelleistung Online), creating a monthly spread of 116 kEUR/MW/year.
+      </p>
+
+      <!-- Big Arithmetic Equation -->
+      <div class="arithmetic-display">
+        <div class="calc-formula">
+          <div class="calc-node">
+            <span class="calc-label">Highest Benchmark</span>
+            <span id="calc-max-val" class="calc-val">303</span>
+          </div>
+          <span class="calc-op">−</span>
+          <div class="calc-node">
+            <span class="calc-label">Lowest Benchmark</span>
+            <span id="calc-min-val" class="calc-val">187</span>
+          </div>
+          <span class="calc-op">=</span>
+          <div class="calc-node">
+            <span class="calc-label">Observed Spread</span>
+            <span id="calc-spread-val" class="calc-val spread">116</span>
+          </div>
+        </div>
+        <div style="display: flex; flex-direction: column; align-items: flex-end;">
+          <div class="calc-unit">kEUR / MW / year</div>
+          <div class="source-tag">Source: bess-index.com / Boehmer Advisory</div>
+        </div>
+      </div>
+
+
+      <!-- Provider Details Grid -->
+      <div class="providers-grid">
+        <div class="provider-box">
+          <div class="provider-header">
+            <span class="provider-role max">Top Benchmark</span>
+            <span id="max-p-int" style="font-family: var(--font-mono); font-weight: 700; color: var(--accent-cyan);">303 kEUR</span>
+          </div>
+          <div id="max-p-name" class="provider-name">suena — Optimiser Benchmark</div>
+          <div class="provider-data-row">
+            <span>Exact Bundle Float:</span>
+            <span id="max-p-exact">303.600 kEUR</span>
+          </div>
+          <div class="provider-data-row">
+            <span>Published Source:</span>
+            <span>bess-index.com</span>
+          </div>
+        </div>
+
+        <div class="provider-box">
+          <div class="provider-header">
+            <span class="provider-role min">Bottom Benchmark</span>
+            <span id="min-p-int" style="font-family: var(--font-mono); font-weight: 700; color: var(--accent-amber);">187 kEUR</span>
+          </div>
+          <div id="min-p-name" class="provider-name">Regelleistung Online — Benchmark</div>
+          <div class="provider-data-row">
+            <span>Exact Bundle Float:</span>
+            <span id="min-p-exact">187.232 kEUR</span>
+          </div>
+          <div class="provider-data-row">
+            <span>Published Source:</span>
+            <span>bess-index.com</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- LEVEL 2: The Consequential Depth -->
+    <section id="tier2-section" class="depth-section">
+      <div class="depth-header">
+        <span class="level-badge" style="color: var(--accent-amber); background: rgba(245, 158, 11, 0.1);">
+          TIER 2 • METHODOLOGY COMPARABILITY ADJUDICATION
+        </span>
+        <h2>Why do these benchmarks differ?</h2>
+        <p style="color: var(--text-secondary); font-size: 0.95rem;">
+          Evaluating whether <strong id="t2-comparison-title" style="color: var(--text-primary)">suena vs Regelleistung</strong> represent equivalent economic assets under identical operational constraints.
+        </p>
+      </div>
+
+      <div class="verdict-box-tier2">
+        <span class="verdict-tag-amber">METHODOLOGY MISMATCH</span>
+        <div id="t2-rationale" class="verdict-text">
+          At least one explicit methodology mismatch is documented: degradation treatment is Managed vs Not applied. Revenue-stack and foresight declarations use different wording, while three additional dimensions are undisclosed. Direct comparability of the two benchmark values is therefore not established; no causal decomposition of the 116 kEUR spread is claimed.
+        </div>
+      </div>
+
+      <!-- Comparability Matrix -->
+      <table class="matrix-table">
+        <thead>
+          <tr>
+            <th style="width: 25%;">Operational Dimension</th>
+            <th style="width: 25%;">Top Provider (suena)</th>
+            <th style="width: 25%;">Bottom Provider (Regelleistung)</th>
+            <th style="width: 12%;">Match Status</th>
+            <th style="width: 13%;">Commercial Implication</th>
+          </tr>
+        </thead>
+        <tbody id="matrix-tbody">
+          <!-- Populated by app.js -->
+        </tbody>
+      </table>
+    </section>
+
+    <!-- LEVEL 3: Complete German Market Spectrum -->
+    <section id="all-de-section" class="all-benchmarks-section">
+      <span class="level-badge">MARKET SPECTRUM • GERMANY (AUGUST 2026)</span>
+      <h2 style="font-size: 1.35rem; font-weight: 700; margin-top: 0.3rem;">All 9 Published Benchmarks Ranked</h2>
+      <p style="color: var(--text-secondary); font-size: 0.9rem;">
+        Extracted directly from the pinned production bundle of <code>bess-index.com</code>.
+      </p>
+
+      <table class="benchmarks-table">
+        <thead>
+          <tr>
+            <th style="width: 5%;">#</th>
+            <th style="width: 25%;">Provider Benchmark</th>
+            <th style="width: 15%;">Revenue (kEUR/MW/yr)</th>
+            <th style="width: 20%;">Dispatch Foresight</th>
+            <th style="width: 15%;">Degradation Model</th>
+            <th style="width: 20%;">Empirical Basis</th>
+          </tr>
+        </thead>
+        <tbody id="all-de-tbody">
+          <!-- Populated by app.js -->
+        </tbody>
+      </table>
+    </section>
+
+    <!-- LEVEL 4: Provenance & Cryptographic Manifest -->
+    <section class="provenance-card">
+      <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem;">
+        <div>
+          <span class="level-badge" style="color: var(--accent-cyan); background: rgba(56, 189, 248, 0.1);">
+            PROVENANCE & INTEGRITY
+          </span>
+          <h3>Zero-Trust Data Pinning</h3>
+        </div>
+        <div style="font-family: var(--font-mono); font-size: 0.8rem; color: var(--text-muted);">
+          Acquisition: 2026-10-06T09:35:00Z • Boehmer Advisory UG
+        </div>
+      </div>
+
+      <p style="color: var(--text-secondary); font-size: 0.85rem; margin-top: 0.5rem;">
+        All figures are byte-pinned from the live production bundle of <code>www.bess-index.com</code>. 
+        Zero reconstruction from social media posts. Every raw file is protected by a SHA-256 integrity manifest.
+      </p>
+
+      <ul class="manifest-list">
+        <li class="manifest-item">
+          <span>data/raw/source_snapshot/bess_index_routes.js (Production Web Bundle)</span>
+          <span class="hash-val">a6ff40417eff818013d62cd1f1d76a39ea6b5a3e8b0532e50c0c7f9cea0852ae</span>
+        </li>
+        <li class="manifest-item">
+          <span>data/raw/bess_benchmarks_august_2026.csv (Extracted Records)</span>
+          <span class="hash-val">8de773198bb496b5903c45cfc3a718c6d3b1d6a21150691c4b0db42dbf0cbd27</span>
+        </li>
+        <li class="manifest-item">
+          <span>data/raw/bess_providers_methodology.json (Methodology Attributes)</span>
+          <span class="hash-val">c86314184a5b5ef63b973ca0171c60bd4ec55d909400ebf1b3e959076c45cc05</span>
+        </li>
+      </ul>
+
+      <!-- Download Evidence Package Action Bar -->
+      <div class="download-action-bar">
+        <div>
+          <div class="download-callout-title">
+            <span>📦 Don’t trust the dashboard. Download the evidence.</span>
+          </div>
+          <div class="download-callout-sub">
+            Complete standalone package: deterministic Python verifier, test suite, formal claim JSONs, hash-bound receipts, extracted benchmark tables, and provenance records.
+          </div>
+        </div>
+        <a href="evidence-package-august-2026.zip" download class="btn-download-pkg">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+          Download Evidence Package (.zip)
+        </a>
+      </div>
+
+      <div class="reproduce-options">
+        <div class="reproduce-box">
+          <span>$ git clone https://github.com/VolMax-Studio/bess-revenue-evidence-lab-s1.git &amp;&amp; cd bess-revenue-evidence-lab-s1 &amp;&amp; ./reproduce.sh</span>
+          <span style="color: var(--accent-emerald); font-weight: 700;">PUBLIC GIT REPO</span>
+        </div>
+        <div class="reproduce-box">
+          <span>$ curl -O https://bess-revenue-evidence-lab-s1.vercel.app/evidence-package-august-2026.zip &amp;&amp; unzip evidence-package-august-2026.zip &amp;&amp; ./reproduce.sh</span>
+          <span style="color: var(--accent-cyan); font-weight: 700;">STANDALONE ZIP</span>
+        </div>
+      </div>
+
+      <div style="margin-top: 0.75rem;">
+        <a href="https://github.com/VolMax-Studio/bess-revenue-evidence-lab-s1" target="_blank" rel="noopener" class="github-link-btn">
+          <span>Inspect verifier source code on GitHub →</span>
+        </a>
+      </div>
+
+      <div class="custody-disclaimer">
+        * Full raw web source snapshots are retained in private audit custody pending redistribution clearance. Public source URLs, extracted evidence used by the verifier, deterministic verification code, and cryptographic hashes are available for inspection.
+      </div>
+
+      <!-- Explicit Source Attribution Card -->
+      <div class="source-attribution-card">
+        <h4>Source Attribution</h4>
+        <p>
+          Benchmark data used in this case originates from <a href="https://www.bess-index.com" target="_blank" rel="noopener">bess-index.com</a> / Boehmer Advisory and the respective benchmark providers. VolMax Studio does not claim ownership of the underlying benchmark data. This Evidence Lab case independently verifies selected published claims and examines comparability of declared assumptions.
+        </p>
+      </div>
+
+
+
+    </section>
+  </main>
+
+  <footer>
+    VolMax Evidence Lab • Independent Battery Energy Storage Analytics &amp; Epistemological Verifiers
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

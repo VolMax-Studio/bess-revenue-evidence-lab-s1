@@ -1,0 +1,329 @@
+[
+  {
+    "month": "2026-08",
+    "market_code": "BE",
+    "market_name": "Belgium",
+    "provider_id": "aurora",
+    "provider_name": "Aurora Energy Research \u2014 Central",
+    "provider_short": "Aurora",
+    "benchmark_keur_mw_yr_exact": 145.32,
+    "benchmark_keur_mw_yr_integer": 145,
+    "foresight": "Optimised dispatch with imperfect-foresight haircut",
+    "cycling": "1.5 cycles/day",
+    "cycle_limit": "n/a",
+    "availability": "98%",
+    "revenue_streams": [
+      "Wholesale trading arbitrage",
+      "Ancillary services",
+      "Capacity market"
+    ],
+    "degradation": "Modelled, with augmentation capex",
+    "basis": "Fundamental market model, hourly + intraday shaping"
+  },
+  {
+    "month": "2026-08",
+    "market_code": "BE",
+    "market_name": "Belgium",
+    "provider_id": "cleanhorizon",
+    "provider_name": "Clean Horizon \u2014 Storage Index",
+    "provider_short": "Clean Horizon",
+    "benchmark_keur_mw_yr_exact": 158.0,
+    "benchmark_keur_mw_yr_integer": 158,
+    "foresight": "Modelled dispatch with efficiency factor",
+    "cycling": "1.5",
+    "cycle_limit": "n/a",
+    "availability": "100%",
+    "revenue_streams": [
+      "Wholesale trading arbitrage",
+      "Ancillary services"
+    ],
+    "degradation": "Modelled",
+    "basis": "Published monthly storage revenue index"
+  },
+  {
+    "month": "2026-08",
+    "market_code": "BE",
+    "market_name": "Belgium",
+    "provider_id": "retwin",
+    "provider_name": "Re-Twin \u2014 Digital Twin Benchmark",
+    "provider_short": "Re-Twin",
+    "benchmark_keur_mw_yr_exact": 229.91,
+    "benchmark_keur_mw_yr_integer": 229,
+    "foresight": "Modelled dispatch (digital twin)",
+    "cycling": "n/a",
+    "cycle_limit": "2 cycles/day",
+    "availability": "n/a",
+    "revenue_streams": [
+      "Wholesale trading arbitrage",
+      "Ancillary services"
+    ],
+    "degradation": "Modelled",
+    "basis": "Published monthly benchmark series"
+  },
+  {
+    "month": "2026-08",
+    "market_code": "DE",
+    "market_name": "Germany",
+    "provider_id": "regelleistung",
+    "provider_name": "Regelleistung Online \u2014 Benchmark",
+    "provider_short": "Regelleistung",
+    "benchmark_keur_mw_yr_exact": 187.232,
+    "benchmark_keur_mw_yr_integer": 187,
+    "foresight": "Modelled dispatch on market prices",
+    "cycling": "n/a",
+    "cycle_limit": "2 cycles/day",
+    "availability": "n/a",
+    "revenue_streams": [
+      "Wholesale trading arbitrage",
+      "Balancing / aFRR"
+    ],
+    "degradation": "Not applied",
+    "basis": "Published monthly benchmark series"
+  },
+  {
+    "month": "2026-08",
+    "market_code": "DE",
+    "market_name": "Germany",
+    "provider_id": "modo",
+    "provider_name": "Modo Energy \u2014 Benchmark (2h)",
+    "provider_short": "Modo",
+    "benchmark_keur_mw_yr_exact": 190.611,
+    "benchmark_keur_mw_yr_integer": 190,
+    "foresight": "Realised / imperfect foresight (actual asset dispatch)",
+    "cycling": "n/a",
+    "cycle_limit": "1.5 cycles/day",
+    "availability": "n/a",
+    "revenue_streams": [
+      "Wholesale trading arbitrage",
+      "Balancing / BM",
+      "Frequency response"
+    ],
+    "degradation": "Implicit in observed operation",
+    "basis": "Bottom-up metering of operational fleet"
+  },
+  {
+    "month": "2026-08",
+    "market_code": "DE",
+    "market_name": "Germany",
+    "provider_id": "enspired",
+    "provider_name": "enspired \u2014 Realised Trading",
+    "provider_short": "enspired",
+    "benchmark_keur_mw_yr_exact": 202.0,
+    "benchmark_keur_mw_yr_integer": 202,
+    "foresight": "Live algorithmic trading (imperfect foresight)",
+    "cycling": "As-operated",
+    "cycle_limit": "n/a",
+    "availability": "As-operated",
+    "revenue_streams": [
+      "Intraday continuous",
+      "Wholesale trading arbitrage",
+      "Balancing"
+    ],
+    "degradation": "Managed via throughput budget",
+    "basis": "Realised optimiser results across managed portfolio"
+  },
+  {
+    "month": "2026-08",
+    "market_code": "DE",
+    "market_name": "Germany",
+    "provider_id": "rwth",
+    "provider_name": "RWTH Aachen \u2014 Academic Model",
+    "provider_short": "RWTH Aachen",
+    "benchmark_keur_mw_yr_exact": 209.68,
+    "benchmark_keur_mw_yr_integer": 209,
+    "foresight": "Perfect foresight linear programme",
+    "cycling": "n/a",
+    "cycle_limit": "2.0",
+    "availability": "n/a",
+    "revenue_streams": [
+      "Wholesale trading arbitrage",
+      "Ancillary services"
+    ],
+    "degradation": "Not modelled",
+    "basis": "Deterministic optimisation, university research"
+  },
+  {
+    "month": "2026-08",
+    "market_code": "DE",
+    "market_name": "Germany",
+    "provider_id": "aurora",
+    "provider_name": "Aurora Energy Research \u2014 Central",
+    "provider_short": "Aurora",
+    "benchmark_keur_mw_yr_exact": 220.2,
+    "benchmark_keur_mw_yr_integer": 220,
+    "foresight": "Optimised dispatch with imperfect-foresight haircut",
+    "cycling": "1.5 cycles/day",
+    "cycle_limit": "n/a",
+    "availability": "98%",
+    "revenue_streams": [
+      "Wholesale trading arbitrage",
+      "Ancillary services",
+      "Capacity market"
+    ],
+    "degradation": "Modelled, with augmentation capex",
+    "basis": "Fundamental market model, hourly + intraday shaping"
+  },
+  {
+    "month": "2026-08",
+    "market_code": "DE",
+    "market_name": "Germany",
+    "provider_id": "retwin",
+    "provider_name": "Re-Twin \u2014 Digital Twin Benchmark",
+    "provider_short": "Re-Twin",
+    "benchmark_keur_mw_yr_exact": 230.38,
+    "benchmark_keur_mw_yr_integer": 230,
+    "foresight": "Modelled dispatch (digital twin)",
+    "cycling": "n/a",
+    "cycle_limit": "2 cycles/day",
+    "availability": "n/a",
+    "revenue_streams": [
+      "Wholesale trading arbitrage",
+      "Ancillary services"
+    ],
+    "degradation": "Modelled",
+    "basis": "Published monthly benchmark series"
+  },
+  {
+    "month": "2026-08",
+    "market_code": "DE",
+    "market_name": "Germany",
+    "provider_id": "cleanhorizon",
+    "provider_name": "Clean Horizon \u2014 Storage Index",
+    "provider_short": "Clean Horizon",
+    "benchmark_keur_mw_yr_exact": 233.0,
+    "benchmark_keur_mw_yr_integer": 233,
+    "foresight": "Modelled dispatch with efficiency factor",
+    "cycling": "1.5",
+    "cycle_limit": "n/a",
+    "availability": "100%",
+    "revenue_streams": [
+      "Wholesale trading arbitrage",
+      "Ancillary services"
+    ],
+    "degradation": "Modelled",
+    "basis": "Published monthly storage revenue index"
+  },
+  {
+    "month": "2026-08",
+    "market_code": "DE",
+    "market_name": "Germany",
+    "provider_id": "lcp",
+    "provider_name": "LCP Delta \u2014 Storage Outlook",
+    "provider_short": "LCP Delta",
+    "benchmark_keur_mw_yr_exact": 244.0,
+    "benchmark_keur_mw_yr_integer": 244,
+    "foresight": "Modelled dispatch, near-perfect foresight",
+    "cycling": "n/a",
+    "cycle_limit": "2 cycles/day",
+    "availability": "n/a",
+    "revenue_streams": [
+      "Wholesale trading arbitrage",
+      "Ancillary services",
+      "Capacity market"
+    ],
+    "degradation": "Modelled",
+    "basis": "Dispatch optimiser over modelled price curves"
+  },
+  {
+    "month": "2026-08",
+    "market_code": "DE",
+    "market_name": "Germany",
+    "provider_id": "suena",
+    "provider_name": "suena \u2014 Optimiser Benchmark",
+    "provider_short": "suena",
+    "benchmark_keur_mw_yr_exact": 303.6,
+    "benchmark_keur_mw_yr_integer": 303,
+    "foresight": "Modelled / realised optimiser dispatch",
+    "cycling": "n/a",
+    "cycle_limit": "n/a",
+    "availability": "n/a",
+    "revenue_streams": [
+      "Wholesale trading arbitrage",
+      "Balancing"
+    ],
+    "degradation": "Managed",
+    "basis": "Published monthly benchmark series"
+  },
+  {
+    "month": "2026-08",
+    "market_code": "ES",
+    "market_name": "Spain",
+    "provider_id": "modo",
+    "provider_name": "Modo Energy \u2014 Benchmark (2h)",
+    "provider_short": "Modo",
+    "benchmark_keur_mw_yr_exact": 287.887,
+    "benchmark_keur_mw_yr_integer": 287,
+    "foresight": "Realised / imperfect foresight (actual asset dispatch)",
+    "cycling": "n/a",
+    "cycle_limit": "1.5 cycles/day",
+    "availability": "n/a",
+    "revenue_streams": [
+      "Wholesale trading arbitrage",
+      "Balancing / BM",
+      "Frequency response"
+    ],
+    "degradation": "Implicit in observed operation",
+    "basis": "Bottom-up metering of operational fleet"
+  },
+  {
+    "month": "2026-08",
+    "market_code": "ES",
+    "market_name": "Spain",
+    "provider_id": "retwin",
+    "provider_name": "Re-Twin \u2014 Digital Twin Benchmark",
+    "provider_short": "Re-Twin",
+    "benchmark_keur_mw_yr_exact": 295.55,
+    "benchmark_keur_mw_yr_integer": 295,
+    "foresight": "Modelled dispatch (digital twin)",
+    "cycling": "n/a",
+    "cycle_limit": "2 cycles/day",
+    "availability": "n/a",
+    "revenue_streams": [
+      "Wholesale trading arbitrage",
+      "Ancillary services"
+    ],
+    "degradation": "Modelled",
+    "basis": "Published monthly benchmark series"
+  },
+  {
+    "month": "2026-08",
+    "market_code": "ES",
+    "market_name": "Spain",
+    "provider_id": "aurora",
+    "provider_name": "Aurora Energy Research \u2014 Central",
+    "provider_short": "Aurora",
+    "benchmark_keur_mw_yr_exact": 343.32,
+    "benchmark_keur_mw_yr_integer": 343,
+    "foresight": "Optimised dispatch with imperfect-foresight haircut",
+    "cycling": "1.5 cycles/day",
+    "cycle_limit": "n/a",
+    "availability": "98%",
+    "revenue_streams": [
+      "Wholesale trading arbitrage",
+      "Ancillary services",
+      "Capacity market"
+    ],
+    "degradation": "Modelled, with augmentation capex",
+    "basis": "Fundamental market model, hourly + intraday shaping"
+  },
+  {
+    "month": "2026-08",
+    "market_code": "ES",
+    "market_name": "Spain",
+    "provider_id": "cleanhorizon",
+    "provider_name": "Clean Horizon \u2014 Storage Index",
+    "provider_short": "Clean Horizon",
+    "benchmark_keur_mw_yr_exact": 507.0,
+    "benchmark_keur_mw_yr_integer": 507,
+    "foresight": "Modelled dispatch with efficiency factor",
+    "cycling": "1.5",
+    "cycle_limit": "n/a",
+    "availability": "100%",
+    "revenue_streams": [
+      "Wholesale trading arbitrage",
+      "Ancillary services"
+    ],
+    "degradation": "Modelled",
+    "basis": "Published monthly storage revenue index"
+  }
+]

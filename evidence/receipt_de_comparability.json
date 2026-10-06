@@ -1,0 +1,102 @@
+{
+  "receipt_id": "RCPT-T2-CLAIM-EVID-002-DE-COMPARABILITY",
+  "tier": 2,
+  "claim_id": "CLAIM-EVID-002-DE-COMPARABILITY",
+  "verdict": "METHODOLOGY_MISMATCH",
+  "summary": "At least one explicit methodology mismatch is documented: Degradation Model. There are also 2 declaration difference(s) and 3 undisclosed dimension(s). Direct comparability of the two benchmark values is therefore not established.",
+  "calculation": {
+    "market_code": "DE",
+    "target_period": "2026-08",
+    "provider_a": {
+      "id": "suena",
+      "name": "suena \u2014 Optimiser Benchmark",
+      "short": "suena",
+      "benchmark_keur": 303.6
+    },
+    "provider_b": {
+      "id": "regelleistung",
+      "name": "Regelleistung Online \u2014 Benchmark",
+      "short": "Regelleistung",
+      "benchmark_keur": 187.232
+    },
+    "spread_keur": 116.368,
+    "dimensions_evaluated": [
+      {
+        "dimension": "revenue_streams",
+        "label": "Revenue Stack Included",
+        "provider_a_value": [
+          "Wholesale trading arbitrage",
+          "Balancing"
+        ],
+        "provider_b_value": [
+          "Wholesale trading arbitrage",
+          "Balancing / aFRR"
+        ],
+        "status": "DECLARATION_DIFFERENCE",
+        "implication": "Published wording differs; semantic incompatibility is not inferred from wording alone."
+      },
+      {
+        "dimension": "foresight",
+        "label": "Dispatch Foresight Assumption",
+        "provider_a_value": "Modelled / realised optimiser dispatch",
+        "provider_b_value": "Modelled dispatch on market prices",
+        "status": "DECLARATION_DIFFERENCE",
+        "implication": "Published wording differs; semantic incompatibility is not inferred from wording alone."
+      },
+      {
+        "dimension": "cycling",
+        "label": "Cycling Intensity",
+        "provider_a_value": "n/a",
+        "provider_b_value": "n/a",
+        "status": "UNDISCLOSED",
+        "implication": "One or both providers do not disclose this parameter; comparability cannot be established for this dimension."
+      },
+      {
+        "dimension": "cycle_limit",
+        "label": "Cycle Limit Applied",
+        "provider_a_value": "n/a",
+        "provider_b_value": "2 cycles/day",
+        "status": "UNDISCLOSED",
+        "implication": "One or both providers do not disclose this parameter; comparability cannot be established for this dimension."
+      },
+      {
+        "dimension": "availability",
+        "label": "Asset Availability",
+        "provider_a_value": "n/a",
+        "provider_b_value": "n/a",
+        "status": "UNDISCLOSED",
+        "implication": "One or both providers do not disclose this parameter; comparability cannot be established for this dimension."
+      },
+      {
+        "dimension": "degradation",
+        "label": "Degradation Model",
+        "provider_a_value": "Managed",
+        "provider_b_value": "Not applied",
+        "status": "MISMATCH",
+        "implication": "An explicit declared assumption differs; direct comparability is not established for this dimension."
+      },
+      {
+        "dimension": "basis",
+        "label": "Empirical / Modelling Basis",
+        "provider_a_value": "Published monthly benchmark series",
+        "provider_b_value": "Published monthly benchmark series",
+        "status": "MATCH",
+        "implication": "Identical value is declared by both providers for this dimension."
+      }
+    ],
+    "counts": {
+      "matches": 1,
+      "mismatches": 1,
+      "declaration_differences": 2,
+      "undisclosed": 3,
+      "total_dimensions": 7
+    },
+    "critical_mismatches": [
+      "degradation"
+    ]
+  },
+  "integrity": {
+    "manifest_status": "PASS",
+    "receipt_hash_sha256": "95145e2b3ded88fb59c11cf818612fb32a28ce93376504046ca2baa783118ed9"
+  }
+}

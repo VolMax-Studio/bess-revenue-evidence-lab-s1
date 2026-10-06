@@ -1,0 +1,24 @@
+{
+  "claim_id": "CLAIM-EVID-002-DE-SPREAD",
+  "tier": 1,
+  "category": "ARITHMETIC_SPREAD_VERIFICATION",
+  "title": "August 2026 German BESS Revenue Benchmark Spread",
+  "published_statement": "In Germany, highest benchmark is 303 kEUR/MW/year and lowest is 187 kEUR/MW/year, resulting in a monthly spread of 116 kEUR/MW/year.",
+  "source_publisher": "Mark Böhmer / Boehmer Advisory UG (www.bess-index.com)",
+  "market_code": "DE",
+  "market_name": "Germany",
+  "target_period": "2026-08",
+  "claimed_values": {
+    "max_provider_short": "suena",
+    "max_benchmark_keur": 303,
+    "min_provider_short": "Regelleistung",
+    "min_benchmark_keur": 187,
+    "spread_keur": 116
+  },
+  "predicate": {
+    "operator": "EQUALS",
+    "target": "claimed_spread_keur",
+    "value": 116
+  },
+  "pinned_data_target": "data/raw/bess_benchmarks_august_2026.json"
+}

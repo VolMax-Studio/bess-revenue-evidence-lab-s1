@@ -1,0 +1,211 @@
+[
+  {
+    "id": "lcp",
+    "name": "LCP Delta \u2014 Storage Outlook",
+    "short": "LCP Delta",
+    "kind": "provider",
+    "color": "#7c3aed",
+    "methodology": {
+      "foresight": "Modelled dispatch, near-perfect foresight",
+      "cycling": "n/a",
+      "cycleLimit": "2 cycles/day",
+      "availability": "n/a",
+      "revenueStreams": [
+        "Wholesale trading arbitrage",
+        "Ancillary services",
+        "Capacity market"
+      ],
+      "degradation": "Modelled",
+      "basis": "Dispatch optimiser over modelled price curves"
+    },
+    "markets_covered": [
+      "DE"
+    ]
+  },
+  {
+    "id": "cleanhorizon",
+    "name": "Clean Horizon \u2014 Storage Index",
+    "short": "Clean Horizon",
+    "kind": "provider",
+    "color": "#0f766e",
+    "methodology": {
+      "foresight": "Modelled dispatch with efficiency factor",
+      "cycling": "1.5",
+      "cycleLimit": "n/a",
+      "availability": "100%",
+      "revenueStreams": [
+        "Wholesale trading arbitrage",
+        "Ancillary services"
+      ],
+      "degradation": "Modelled",
+      "basis": "Published monthly storage revenue index"
+    },
+    "markets_covered": [
+      "DE",
+      "BE",
+      "ES"
+    ]
+  },
+  {
+    "id": "enspired",
+    "name": "enspired \u2014 Realised Trading",
+    "short": "enspired",
+    "kind": "provider",
+    "color": "#16a34a",
+    "methodology": {
+      "foresight": "Live algorithmic trading (imperfect foresight)",
+      "cycling": "As-operated",
+      "cycleLimit": "n/a",
+      "availability": "As-operated",
+      "revenueStreams": [
+        "Intraday continuous",
+        "Wholesale trading arbitrage",
+        "Balancing"
+      ],
+      "degradation": "Managed via throughput budget",
+      "basis": "Realised optimiser results across managed portfolio"
+    },
+    "markets_covered": [
+      "DE"
+    ]
+  },
+  {
+    "id": "suena",
+    "name": "suena \u2014 Optimiser Benchmark",
+    "short": "suena",
+    "kind": "provider",
+    "color": "#ea580c",
+    "methodology": {
+      "foresight": "Modelled / realised optimiser dispatch",
+      "cycling": "n/a",
+      "cycleLimit": "n/a",
+      "availability": "n/a",
+      "revenueStreams": [
+        "Wholesale trading arbitrage",
+        "Balancing"
+      ],
+      "degradation": "Managed",
+      "basis": "Published monthly benchmark series"
+    },
+    "markets_covered": [
+      "DE"
+    ]
+  },
+  {
+    "id": "rwth",
+    "name": "RWTH Aachen \u2014 Academic Model",
+    "short": "RWTH Aachen",
+    "kind": "provider",
+    "color": "#475569",
+    "methodology": {
+      "foresight": "Perfect foresight linear programme",
+      "cycling": "n/a",
+      "cycleLimit": "2.0",
+      "availability": "n/a",
+      "revenueStreams": [
+        "Wholesale trading arbitrage",
+        "Ancillary services"
+      ],
+      "degradation": "Not modelled",
+      "basis": "Deterministic optimisation, university research"
+    },
+    "markets_covered": [
+      "DE"
+    ]
+  },
+  {
+    "id": "aurora",
+    "name": "Aurora Energy Research \u2014 Central",
+    "short": "Aurora",
+    "kind": "provider",
+    "color": "#1d4ed8",
+    "methodology": {
+      "foresight": "Optimised dispatch with imperfect-foresight haircut",
+      "cycling": "1.5 cycles/day",
+      "cycleLimit": "n/a",
+      "availability": "98%",
+      "revenueStreams": [
+        "Wholesale trading arbitrage",
+        "Ancillary services",
+        "Capacity market"
+      ],
+      "degradation": "Modelled, with augmentation capex",
+      "basis": "Fundamental market model, hourly + intraday shaping"
+    },
+    "markets_covered": [
+      "DE",
+      "BE",
+      "ES"
+    ]
+  },
+  {
+    "id": "retwin",
+    "name": "Re-Twin \u2014 Digital Twin Benchmark",
+    "short": "Re-Twin",
+    "kind": "provider",
+    "color": "#0891b2",
+    "methodology": {
+      "foresight": "Modelled dispatch (digital twin)",
+      "cycling": "n/a",
+      "cycleLimit": "2 cycles/day",
+      "availability": "n/a",
+      "revenueStreams": [
+        "Wholesale trading arbitrage",
+        "Ancillary services"
+      ],
+      "degradation": "Modelled",
+      "basis": "Published monthly benchmark series"
+    },
+    "markets_covered": [
+      "DE",
+      "BE",
+      "ES"
+    ]
+  },
+  {
+    "id": "regelleistung",
+    "name": "Regelleistung Online \u2014 Benchmark",
+    "short": "Regelleistung",
+    "kind": "provider",
+    "color": "#b45309",
+    "methodology": {
+      "foresight": "Modelled dispatch on market prices",
+      "cycling": "n/a",
+      "cycleLimit": "2 cycles/day",
+      "availability": "n/a",
+      "revenueStreams": [
+        "Wholesale trading arbitrage",
+        "Balancing / aFRR"
+      ],
+      "degradation": "Not applied",
+      "basis": "Published monthly benchmark series"
+    },
+    "markets_covered": [
+      "DE"
+    ]
+  },
+  {
+    "id": "modo",
+    "name": "Modo Energy \u2014 Benchmark (2h)",
+    "short": "Modo",
+    "kind": "provider",
+    "color": "#0e7490",
+    "methodology": {
+      "foresight": "Realised / imperfect foresight (actual asset dispatch)",
+      "cycling": "n/a",
+      "cycleLimit": "1.5 cycles/day",
+      "availability": "n/a",
+      "revenueStreams": [
+        "Wholesale trading arbitrage",
+        "Balancing / BM",
+        "Frequency response"
+      ],
+      "degradation": "Implicit in observed operation",
+      "basis": "Bottom-up metering of operational fleet"
+    },
+    "markets_covered": [
+      "DE",
+      "ES"
+    ]
+  }
+]

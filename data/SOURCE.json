@@ -1,0 +1,94 @@
+{
+  "source_id": "bess-index-august-2026",
+  "title": "European BESS Revenue Benchmarks — August 2026 Update",
+  "publisher": {
+    "name": "Boehmer Advisory UG (haftungsbeschränkt)",
+    "analyst": "Mark Böhmer",
+    "role": "Head of Offtake & Commercial Asset Management @ Delta Capacity / Energy Storage Advisory",
+    "primary_website": "https://www.bess-index.com"
+  },
+  "provenance": {
+    "acquisition_timestamp": "2026-10-06T09:35:00Z",
+    "acquisition_method": "HTTP GET retrieval of public live web application and production JavaScript bundle",
+    "primary_url": "https://www.bess-index.com",
+    "raw_source_assets": [
+      {
+        "file": "raw/source_snapshot/bess_index_page.html",
+        "url": "https://www.bess-index.com/",
+        "sha256": "094c6487df6cba9f95850f819a3731ad904e5c4229a21619a133b278e33ef8d2",
+        "size_bytes": 40395
+      },
+      {
+        "file": "raw/source_snapshot/bess_index_routes.js",
+        "url": "https://www.bess-index.com/assets/routes-6Gnn6JDp.js",
+        "sha256": "a6ff40417eff818013d62cd1f1d76a39ea6b5a3e8b0532e50c0c7f9cea0852ae",
+        "size_bytes": 852990
+      },
+      {
+        "file": "raw/source_snapshot/bess_index_index.js",
+        "url": "https://www.bess-index.com/assets/index-Dmsn5t34.js",
+        "sha256": "4af64f24e24aec951902a0dffcf2662491d0493a9534ca694ab2814002db7b79",
+        "size_bytes": 340028
+      }
+    ]
+  },
+  "extracted_datasets": [
+    {
+      "file": "raw/bess_benchmarks_august_2026.csv",
+      "description": "August 2026 extracted benchmark records by market and provider with methodology attributes",
+      "sha256": "8de773198bb496b5903c45cfc3a718c6d3b1d6a21150691c4b0db42dbf0cbd27",
+      "size_bytes": 4339
+    },
+    {
+      "file": "raw/bess_benchmarks_august_2026.json",
+      "description": "August 2026 structured JSON records",
+      "sha256": "752a0489d8e84d6ca815dfd0c31b79a88bf86c7ff058d745a108246101f061af",
+      "size_bytes": 10288
+    },
+    {
+      "file": "raw/bess_monthly_series_complete.json",
+      "description": "Complete monthly time-series for Germany, Belgium, and Spain across all reporting providers",
+      "sha256": "9303e44f282cc0fcd47d8f1119c526b4ab7d687e9ab187cb66388c65a5b304d5",
+      "size_bytes": 11700
+    },
+    {
+      "file": "raw/bess_providers_methodology.json",
+      "description": "Declared methodology metadata by provider (dispatch foresight, cycling, cycle limits, availability, revenue streams, degradation model, basis)",
+      "sha256": "c86314184a5b5ef63b973ca0171c60bd4ec55d909400ebf1b3e959076c45cc05",
+      "size_bytes": 5384
+    }
+  ],
+  "market_coverage": [
+    {
+      "market_code": "DE",
+      "country": "Germany",
+      "bid_zone": "DE",
+      "target_month": "2026-08",
+      "reporting_providers_count": 9
+    },
+    {
+      "market_code": "BE",
+      "country": "Belgium",
+      "bid_zone": "BE",
+      "target_month": "2026-08",
+      "reporting_providers_count": 3
+    },
+    {
+      "market_code": "ES",
+      "country": "Spain",
+      "bid_zone": "ES",
+      "target_month": "2026-08",
+      "reporting_providers_count": 4
+    }
+  ],
+  "unit_of_measure": {
+    "metric": "BESS annualised revenue benchmark",
+    "unit": "kEUR/MW/year",
+    "temporal_resolution": "Monthly",
+    "target_period": "2026-08"
+  },
+  "reproducibility": {
+    "extraction_script": "scripts/extract_source_data.py",
+    "method": "Deterministic JavaScript object deserialization via Node.js runtime over pinned production bundle data/raw/source_snapshot/bess_index_routes.js"
+  }
+}
