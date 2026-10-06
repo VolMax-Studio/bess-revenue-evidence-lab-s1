@@ -34,7 +34,8 @@ Adjudicates whether the highest and lowest benchmarks represent equivalent econo
 
 | Operational Dimension | Top Provider (`suena`) | Bottom Provider (`Regelleistung`) | Match Status | Epistemological Finding |
 |---|---|---|---|---|
-| **Degradation Model** | `Managed` | `Not applied` | **`MISMATCH`** | Explicit operational disparity; zero degradation model earns unconstrained margins. |
+| **Degradation Model** | `Managed` | `Not applied` | **`MISMATCH`** | Explicit operational disparity; different degradation treatment materially affects the economic interpretation of cycling revenues. |
+
 | **Revenue Stack** | `Wholesale; Balancing` | `Wholesale; Balancing / aFRR` | **`DECLARATION_DIFFERENCE`** | Published wording differs; semantic incompatibility is not inferred from wording alone. |
 | **Dispatch Foresight** | `Modelled / realised optimiser dispatch` | `Modelled dispatch on market prices` | **`DECLARATION_DIFFERENCE`** | Published wording differs; different descriptive phrasing. |
 | **Cycle Limit Applied** | `n/a` | `2 cycles/day` | **`UNDISCLOSED`** | `suena` does not disclose cycle capping parameter. |
